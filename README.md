@@ -64,6 +64,11 @@ npm install
 ### **3. 配置 LeanCloud**
 
 在 utils\leancloud.js 文件中添加你的 LeanCloud AppID ， AppKey和ServerURL：
+对应数据库
+![image](https://github.com/user-attachments/assets/366e7d6a-15e3-4bb3-94bf-7aac4c965ae2)
+
+![image](https://github.com/user-attachments/assets/a90a1fee-f6e5-4999-8534-880a495f9da8)
+
 
 ```env
 const APP_ID = '你的AppID';
