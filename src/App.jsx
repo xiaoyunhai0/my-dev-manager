@@ -3,6 +3,9 @@ import Home from './pages/Home';
 import ProjectPage from './pages/ProjectPage';
 import TaskPage from './pages/TaskPage';
 import Navbar from './components/Common/Navbar';
+import ProjectDetail from './pages/ProjectDetail';
+
+
 
 function App() {
   return (
@@ -12,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<ProjectPage />} />
         <Route path="/tasks" element={<TaskPage />} />
+        <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
     </>
   );
