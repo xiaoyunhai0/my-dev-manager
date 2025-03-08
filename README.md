@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f6953482-8872-4888-a528-d08c5d1e9b34)# 📌 My Dev Manager
+# 📌 My Dev Manager
 
 My Dev Manager 是一个基于 **React + Vite + LeanCloud** 的个人软件开发管理工具，旨在帮助开发者管理项目和任务，提高生产力。
 
