@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getProjects, createProject } from '../api/projectApi';
+import { getProjects, createProject, deleteProject } from '../api/projectApi';
 import ProjectItem from '../components/Project/ProjectItem';
 
 export default function ProjectPage() {
@@ -25,6 +25,15 @@ export default function ProjectPage() {
         });
     };
 
+    // 删除项目的处理函数
+    const handleDelete = (id) => {
+        if (confirm('确定要删除该项目吗？')) {
+            deleteProject(id).then(() => {
+                loadProjects();
+            });
+        }
+    };
+
     return (
         <div className="container mt-4">
             <div className="d-flex justify-content-between align-items-center mb-4">
@@ -37,7 +46,7 @@ export default function ProjectPage() {
             <div className="row">
                 {projects.map(p => (
                     <div className="col-md-4 mb-3" key={p.id}>
-                        <ProjectItem project={p} />
+                        <ProjectItem project={p} onDelete={handleDelete} />
                     </div>
                 ))}
             </div>

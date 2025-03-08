@@ -14,3 +14,9 @@ export function createProject(name, description) {
     Project.set('description', description);
     return Project.save();
 }
+
+// 删除项目
+export const deleteProject = (projectId) => {
+    const project = AV.Object.createWithoutData('Project', projectId);
+    return project.destroy();
+};
