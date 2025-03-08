@@ -40,3 +40,20 @@ export const updateTaskStatus = (taskId, status) => {
 
 // 获取所有任务
 export const getAllTasks = () => new AV.Query('Task').find();
+
+// 获取所有任务（附带项目名称）
+export const getAllTasksWithProject = async () => {
+    const taskQuery = new AV.Query('Task');
+    const tasks = await taskQuery.find();
+
+    const projectIds = [...new Set(tasks.map(t => t.get('projectId')))];
+    const projectQuery = new AV.Query('Project');
+    projectQuery.containedIn('objectId', projectIds);
+    const projects = await projectQuery.find();
+
+    return tasks.map(task => ({
+        task,
+        project: projects.find(p => p.id === task.get('projectId'))
+    }));
+};
+
