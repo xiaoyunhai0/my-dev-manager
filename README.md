@@ -5,14 +5,18 @@ My Dev Manager 是一个基于 **React + Vite + LeanCloud** 的个人软件开�
 ---
 
 ## 🚀 功能介绍
+![image](https://github.com/user-attachments/assets/fb0fb74e-c3f4-4950-9f64-8a824f85a882)
 
 - **📂 项目管理**
+![image](https://github.com/user-attachments/assets/5425d108-e037-47e0-a78c-11dac6b9776d)
 
   - 创建、编辑、删除项目
   - 查看项目详情
   - 关联任务列表
 
 - **✅ 任务管理**
+![image](https://github.com/user-attachments/assets/ba03406a-73b2-4462-b14b-a06f9c2fb4dc)
+![Uploading image.png…]()
 
   - 创建、编辑、删除任务
   - 任务状态切换（待办 → 开发中 → 已完成）
