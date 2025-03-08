@@ -84,7 +84,7 @@ const SERVER_URL = '你的你的ServerURL';
 npm run dev
 ```
 
-浏览器打开：[http://localhost:5173](http://localhost:5173)
+浏览器打开：[http://localhost:XXXX](http://localhost:XXXX)
 
 ---
 
