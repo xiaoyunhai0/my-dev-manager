@@ -1,8 +1,8 @@
 // src/utils/leancloud.js
 import AV from 'leancloud-storage';
 
-const APP_ID = '9cOcK5wImo0XrToVJX4OZNT7-gzGzoHsz';
-const APP_KEY = 'MhElKWTCXKN1khujH53V9cQG';
+const APP_ID = '你的AppID';
+const APP_KEY = '你的AppKey';
 const SERVER_URL = 'https://9cock5wi.lc-cn-n1-shared.com';
 
 AV.init({
