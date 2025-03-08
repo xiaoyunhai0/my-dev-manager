@@ -3,7 +3,7 @@ import AV from 'leancloud-storage';
 
 const APP_ID = '你的AppID';
 const APP_KEY = '你的AppKey';
-const SERVER_URL = 'https://9cock5wi.lc-cn-n1-shared.com';
+const SERVER_URL = '你的你的ServerURL';
 
 AV.init({
     appId: APP_ID,
